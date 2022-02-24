@@ -1,0 +1,241 @@
+@font-face{
+    src: url(/fonts/OPTIImprovNewWideNine.otf);
+    font-family: 'new_wide';
+}
+@font-face{
+    src: url(/fonts/Poppins-ExtraLight.ttf);
+    font-family:'poppins';
+}
+@font-face{
+    src: url(/fonts/Outfit-Thin.ttf);
+    font-family:'copyright';
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}  
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    margin-left: 40px;
+}
+
+.phone{
+    margin-left: 20px;
+}
+
+div ul li{
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style-type: none;
+    font-family: 'new_wide';
+}
+.cart{
+    margin-left:90%;
+}
+
+.bar{
+    width:50px;
+    height:10px;
+    border:2px solid #fff;
+    margin:6px;
+    cursor:pointer; 
+}
+nav{
+    flex:20;
+    text-align: center;
+    font-family: 'new_wide';
+}
+
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+    font-family: 'new_wide';
+    font-size: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'new_wide';
+}
+
+
+
+/*CATEGORIE POUR LUI*/
+ul li2 a{
+    display: inline-block;
+    font-family: 'new_wide';
+    margin-top: 80px;
+    margin-left: 573px;
+    font-size: 20px;
+}
+
+/*TITRE POUR LUI*/
+a{
+    text-decoration: none;
+    color: black;
+    left: 10px;
+}
+
+
+footer{
+    background-color: black;
+    position: absolute;
+    width: 1263px;
+    height:150px;
+    color: white;
+}
+
+.facebook-bottom{
+    position: absolute;
+    color: white;
+    margin-left: 100px;
+    top: 40px;
+}
+.instagram-bottom{
+    position: absolute;
+    color: white;
+    margin-left: 160px;
+    top: 40px;
+}
+.phone-bottom{
+    top: 38px;
+    position: absolute;
+    color: white;
+    margin-left: 930px;
+}
+.phonenumber{
+    position: absolute;
+    font-family: 'new_wide';
+    color:white;
+    margin-left: 970px;
+    top: 42px;
+}
+h2{
+    position: absolute;
+    left: 1030px;
+    font-family: 'copyright';
+    color: white;
+    font-size: 15px;
+    top: 90px;
+}
+
+
+form{
+    padding: 50px;
+    padding-left: 80px;
+    font-family: 'poppins';
+}
+
+
+label{
+    width: 120px;
+    display: inline-block;
+}
+
+.title{
+    font-family: 'new_wide';
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+.text{
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    text-align: left;
+    padding: 5px;
+    padding-left: 30px;
+    color: black;
+    background: #A6A6A6;
+    font-weight: bold;
+    font-family: 'poppins';
+}
+.btn1{
+    width: 300px;
+    height:40px;
+    font-size: 13px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    align-items: center; /*Milieu du bouton*/
+    justify-content: center; /*Centrer le bouton*/
+    display: flex;
+    user-select:none;
+    transition:.25s;
+    position: relative;
+    font-family: 'new_wide'; 
+    float: right;
+    margin-right: 50px;
+}
+.btn1:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #A6A6A6;
+}
+
+.btn2{
+    position:absolute;
+    width: 300px;
+    height:40px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background-color:grey;
+    color:white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    user-select:none;
+    transition:.25s;
+    position: relative;
+    font-family: 'new_wide';  
+    margin-left: 580px;
+    margin-bottom: 40px;
+}
+.btn2:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #A6A6A6;
+}
+
+input{
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+}
+select{
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px; 
+}
+.info{
+    font-family: 'poppins';
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.commande p{
+    position: absolute;
+    top: 350px;
+    margin-left: 100px;
+}
+.date p{
+    position: absolute;
+    top:370px;
+    padding: 10px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+.produit{
+    font-family: 'poppins';
+    margin-left: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

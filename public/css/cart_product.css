@@ -1,0 +1,260 @@
+@font-face{
+    src: url(/fonts/OPTIImprovNewWideNine.otf);
+    font-family: 'new_wide';
+}
+@font-face{
+    src: url(/fonts/Poppins-ExtraLight.ttf);
+    font-family:'poppins';
+}
+@font-face{
+    src: url(/fonts/Outfit-Thin.ttf);
+    font-family:'copyright';
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}  
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    margin-left: 40px;
+}
+
+.phone{
+    margin-left: 20px;
+}
+
+div ul li{
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style-type: none;
+    font-family: 'new_wide';
+}
+.cart{
+    margin-left:90%;
+}
+
+.bar{
+    width:50px;
+    height:10px;
+    border:2px solid #fff;
+    margin:6px;
+    cursor:pointer; 
+}
+nav{
+    flex:20;
+    text-align: center;
+    font-family: 'new_wide';
+}
+
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+    font-family: 'new_wide';
+    font-size: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'new_wide';
+}
+
+
+
+
+
+
+/*TITRE POUR LUI*/
+a{
+    text-decoration: none;
+    color: black;
+    left: 10px;
+}
+
+
+/*Titre Parfum*/
+h1{
+    color: black;
+    margin-left: 480px;
+    margin-top: 100px;
+    font-family: 'copyright';
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    position: absolute;
+    width: 1263px;
+    height:150px;
+    color: white;
+}
+
+.facebook-bottom{
+    position: absolute;
+    color: white;
+    margin-left: 100px;
+    top: 40px;
+}
+.instagram-bottom{
+    position: absolute;
+    color: white;
+    margin-left: 160px;
+    top: 40px;
+}
+.phone-bottom{
+    top: 38px;
+    position: absolute;
+    color: white;
+    margin-left: 930px;
+}
+.phonenumber{
+    position: absolute;
+    font-family: 'new_wide';
+    color:white;
+    margin-left: 970px;
+    top: 42px;
+}
+h2{
+    position: absolute;
+    left: 1030px;
+    font-family: 'copyright';
+    color: white;
+    font-size: 15px;
+    top: 90px;
+}
+    
+    /*Détails panier*/
+
+.cart-page{
+    padding: 50px;
+    padding-top: 50px;
+}
+table{
+    width: 100%;
+    border-collapse:collapse;
+}
+
+/*Produit info*/
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+    
+} 
+.info-text{
+    margin-top: 25px;
+    font-family: 'poppins';
+    
+    
+}
+
+.title{
+    font-family: 'new_wide';
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 18px;
+    
+}
+/*Barre*/
+th{
+    text-align: left;
+    padding: 5px;
+    color: black;
+    background: #A6A6A6;
+    font-weight: bold;
+    font-family: 'poppins';
+}
+
+
+/*Quantité*/
+td input{
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    
+}
+
+td{
+    font-family: 'poppins';
+    padding: 10px;
+}
+
+.prix-total{
+    font-family: 'poppins';
+    font-style: bold;
+    display: flex;
+    justify-content: flex-end;
+}
+.prix-total table{
+    margin-top:30px;
+    border-top: 2px solid black;
+    width: 100%;
+    max-width: 457px;
+    border-bottom: 2px solid black;
+}
+
+/*Mettre les prix à droite*/
+.prix-total td:last-child{
+    text-align:right;
+    padding-right: 40px;
+}
+
+/*Changement de couleur pour bouton SUPPRIMER*/
+
+
+td i:hover{
+    color: #A6A6A6;
+}
+
+.btn1{
+    width: 300px;
+    height:40px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    align-items: center; /*Milieu du bouton*/
+    justify-content: center; /*Centrer le bouton*/
+    display: flex;
+    user-select:none;
+    transition:.25s;
+    position: relative;
+    font-family: 'new_wide'; 
+    float: right;
+    margin-right: 50px;
+}
+.btn1:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #A6A6A6;
+}
+
+.btn2{
+    position:absolute;
+    width: 300px;
+    height:40px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background-color:grey;
+    color:white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    user-select:none;
+    transition:.25s;
+    position: relative;
+    font-family: 'new_wide';  
+    margin-left: 580px;
+    margin-bottom: 40px;
+}
+.btn2:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #A6A6A6;
+}

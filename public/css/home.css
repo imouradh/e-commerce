@@ -1,0 +1,431 @@
+@font-face{
+    src: url(/fonts/OPTIImprovNewWideNine.otf);
+    font-family: 'new_wide';
+}
+@font-face{
+    src: url(/fonts/Poppins-ExtraLight.ttf);
+    font-family:'poppins';
+}
+@font-face{
+    src: url(/fonts/Outfit-Thin.ttf);
+    font-family:'copyright';
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}  
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    margin-left: 40px;
+    cursor:pointer;
+}
+
+.phone{
+    margin-left: 20px;
+}
+
+div ul li{
+    margin-left: 20px;
+    margin-right: 20px;
+    list-style-type: none;
+    font-family: 'new_wide';
+}
+.cart{
+    margin-left:90%;
+    cursor: pointer;
+}
+.user{
+    position: absolute;
+    margin-left:90%;
+    top: 108.5px;
+}
+
+
+
+.bar{
+    width:50px;
+    height:10px;
+    border:2px solid #fff;
+    margin:6px;
+    cursor:pointer; 
+}
+nav{
+    flex:20;
+    text-align: center;
+    font-family: 'new_wide';
+}
+
+nav ul{
+    display:inline-block;
+    list-style-type: none;
+    font-family: 'new_wide';
+    font-size: 20px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'new_wide';
+}
+
+
+.slider{
+    margin-top: 2%;
+    margin-left: 210px;
+    width: 820px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 4100px;
+    display: flex;
+}
+
+.slides input{  /*cacher les boutons*/
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 820px;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 0px;
+}
+.navigation-manual{
+    position:absolute;
+    display: flex;
+    width: 820px;
+    justify-content: center;
+    margin-top: 370px;
+    margin-left: 5px;
+}
+.manual-btn{
+    position: relative;
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+/*espace entre les boutons*/
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+/*changement couleur*/
+.manual-btn:hover{
+    background: black;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+/*mouvement de rotation*/
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+/*automatic navigation*/
+
+/*bouton de navigation automatique*/
+.navigation-auto{
+    position:absolute;
+    display: flex;
+    width: 820px;
+    justify-content: center;
+    margin-top: 370px;
+    margin-left: 5px; 
+    border-radius: 10px;
+}
+
+.navigation-auto div{
+    position: relative;
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+    
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+/*Si le bouton est coché, sa couleur devient noir*/
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: black;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: black;
+}
+
+/*CATEGORIE POUR LUI*/
+ul li2 a{
+    display: inline-block;
+    font-family: 'new_wide';
+    margin-top: 80px;
+    margin-left: 573px;
+    font-size: 20px;
+}
+
+/*TITRE POUR LUI*/
+a{
+    text-decoration: none;
+    color: black;
+    left: 10px;
+}
+
+
+/*Combo box*/
+
+
+/*Titre Parfum*/
+h1{
+    color: black;
+    margin-left: 573px;
+    margin-top: 40px;
+    font-family: 'copyright';
+    font-size: 20px;
+}
+
+select{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:2;
+    outline-color: black;
+    box-shadow: none;
+    border:1;
+    background-image: none;
+}
+
+select::-ms-expand{
+    display:none;
+    
+}
+.select{
+    position:relative;
+    display:flex;
+    width:20em;
+    height: 3em;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: 0px;
+    margin-left: 573px;
+    margin-top: 30px;
+}
+select{ /*ce qui est dans le combo box*/
+    flex:1;
+    padding: 0.5em;
+    cursor: pointer;    
+}
+.select::after{ /*petit triangle*/
+    content:'\25BC';
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 0 1em;
+    background: #A6A6A6 ;
+    cursor: pointer;
+    pointer-events: none;
+    transition:.25s all ease;    
+}
+.select:hover::after{
+    color:white;
+}
+
+/*Bouton Ajouter au panier*/
+.btn{
+    width: 300px;
+    height:40px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    align-items: center; /*Milieu du bouton*/
+    justify-content: center; /*Centrer le bouton*/
+    display: flex;
+    user-select:none;
+    transition:.25s;
+    position: relative;
+    font-family: 'new_wide'; 
+    float: right;
+    margin-top: 40px;
+    margin-right: 390px;
+}
+.btn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #A6A6A6;
+}
+
+
+.img-bottle-lui {
+    position: absolute;
+    top: 680px;
+    width: 280px;
+    margin-left: 240px;
+}
+.img-bottle-elle {
+    position: absolute;
+    top: 1170px;
+    width: 280px;
+    margin-left: 240px;
+}
+.img-bottle-unisexe {
+    position: absolute;
+    top: 1670px;
+    width: 280px;
+    margin-left: 240px;
+}
+
+.img-logo{
+    margin-left: 450px;
+    margin-top:60px;
+    margin-bottom: 30px;
+    width: 400px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    position: absolute;
+    width: 1263px;
+    height:150px;
+    color: white;
+}
+
+.facebook-bottom{
+    position: absolute;
+    color: white;
+    margin-left: 100px;
+    top: 40px;
+}
+.instagram-bottom{
+    position: absolute;
+    color: white;
+    margin-left: 160px;
+    top: 40px;
+}
+.phone-bottom{
+    top: 38px;
+    position: absolute;
+    color: white;
+    margin-left: 930px;
+}
+.phonenumber{
+    position: absolute;
+    font-family: 'new_wide';
+    color:white;
+    margin-left: 970px;
+    top: 42px;
+}
+h2{
+    position: absolute;
+    left: 1030px;
+    font-family: 'copyright';
+    color: white;
+    font-size: 15px;
+    top: 90px;
+}
+
+.shopping-container{
+    display: flex;
+}
+
+.shopping-container button{
+    border-radius: .1rem;
+    background:red;
+    padding: 0 3rem;
+    transition: .2s opacity;
+}
+.shopping-container button:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+.counter-container{
+    border: 1px solid aqua;
+    border-radius: .1rem;
+    width: 3.3rem;
+    height: 3.3rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.counter-container svg{
+    width: 3rem;
+    color: hotpink;
+}
+
+/*le cercle rose*/
+
+.counter-container span{
+    user-select: none;
+    position: absolute;
+    background: hotpink;
+    width: 1rem;
+    height: 1rem;
+    font-size: .6rem;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: .2rem;
+    right: .3rem;
+}
+
+/*ANIMATION*/
+
+/*cacher le cercle rose*/
+
+.counter-container span:not(.animated-counter){
+    display: none;
+}
+.counter-container span.animated-counter{
+    animation: count .4s ease-in-out
+}
+@keyframes count{
+    from{
+        top: .2rem;
+        right: -1.8rem;
+        transform: rotate(120deg)   
+    }
+    25%{
+        top: -.2rem;
+        right: -1.2rem;
+        transform: rotate(80deg)   
+    }
+    50%{
+        top: -.4rem;
+        right: -.6rem;
+        transform: rotate(60deg)   
+    }
+    75%{
+        top: -.4rem;
+        right: 0rem;
+        transform: rotate(30deg)   
+    }
+    to{
+        top: .2rem;
+        right: .3rem;
+        transform: rotate(0deg)   
+    }
+}
